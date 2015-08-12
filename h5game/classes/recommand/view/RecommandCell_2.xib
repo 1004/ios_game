@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A389a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="RecommandCell_2" rowHeight="149" id="KGk-i7-Jjw" customClass="RecommandCell_2">
+            <rect key="frame" x="0.0" y="0.0" width="347" height="149"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ipb-bI-lU2" userLabel="icon">
+                        <rect key="frame" x="8" y="44" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="60" id="8p7-zl-Cvs"/>
+                            <constraint firstAttribute="height" constant="60" id="YXN-iH-pD6"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdl-S5-BaO" userLabel="gametitle">
+                        <rect key="frame" x="76" y="44" width="253" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J9j-Uq-7Nv" userLabel="gamenum">
+                        <rect key="frame" x="76" y="66" width="253" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EdX-ff-6W7" userLabel="gamedesc">
+                        <rect key="frame" x="76" y="87" width="253" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="J9j-Uq-7Nv" firstAttribute="trailing" secondItem="Cdl-S5-BaO" secondAttribute="trailing" id="5dF-7L-p6q"/>
+                    <constraint firstItem="EdX-ff-6W7" firstAttribute="leading" secondItem="J9j-Uq-7Nv" secondAttribute="leading" id="G71-ia-FHF"/>
+                    <constraint firstItem="J9j-Uq-7Nv" firstAttribute="top" secondItem="Cdl-S5-BaO" secondAttribute="bottom" constant="2" id="Gpg-ij-1dx"/>
+                    <constraint firstItem="Ipb-bI-lU2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="H3i-cc-1Im"/>
+                    <constraint firstItem="Cdl-S5-BaO" firstAttribute="leading" secondItem="Ipb-bI-lU2" secondAttribute="trailing" constant="8" id="Ild-Zn-slN"/>
+                    <constraint firstAttribute="centerY" secondItem="Ipb-bI-lU2" secondAttribute="centerY" id="KlE-Od-zI8"/>
+                    <constraint firstItem="Ipb-bI-lU2" firstAttribute="bottom" secondItem="EdX-ff-6W7" secondAttribute="bottom" id="dMV-A3-oDM"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Cdl-S5-BaO" secondAttribute="trailing" constant="10" id="jRA-O6-lIy"/>
+                    <constraint firstItem="J9j-Uq-7Nv" firstAttribute="leading" secondItem="Cdl-S5-BaO" secondAttribute="leading" id="sjw-Wp-23C"/>
+                    <constraint firstItem="EdX-ff-6W7" firstAttribute="trailing" secondItem="J9j-Uq-7Nv" secondAttribute="trailing" id="tlw-TL-05M"/>
+                    <constraint firstItem="Ipb-bI-lU2" firstAttribute="top" secondItem="Cdl-S5-BaO" secondAttribute="top" id="zxT-uv-wfp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="gameDesc" destination="EdX-ff-6W7" id="1e5-4t-JGq"/>
+                <outlet property="gameIcon" destination="Ipb-bI-lU2" id="4ZZ-L0-JlT"/>
+                <outlet property="gameTitle" destination="Cdl-S5-BaO" id="W2p-yl-Z3R"/>
+                <outlet property="gamenum" destination="J9j-Uq-7Nv" id="nyV-PD-BQl"/>
+            </connections>
+            <point key="canvasLocation" x="123.5" y="252.5"/>
+        </tableViewCell>
+    </objects>
+</document>
