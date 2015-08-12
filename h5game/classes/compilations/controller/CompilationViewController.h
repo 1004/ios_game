@@ -10,5 +10,5 @@
 #import "BaseTableViewController.h"
 @protocol HeaderViewPagerDelegate;
 @interface CompilationViewController : BaseTableViewController<HeaderViewPagerDelegate>
-
+@property(nonatomic,weak) UIViewController *mainController;
 @end

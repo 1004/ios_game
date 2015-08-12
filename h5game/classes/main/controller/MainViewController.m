@@ -11,6 +11,7 @@
 #import "MyViewController.h"
 #import "RecommandViewController.h"
 #import "CompilationViewController.h"
+
 @interface MainViewController ()<HeaderViewPagerDataSource,HeaderViewPagerDelegate>
 @property(nonatomic,weak)HeaderViewPager *viewPager;
 @property(nonatomic,strong)NSMutableArray *contentControllers;
@@ -27,6 +28,7 @@
     HeaderViewPager *pager  = [[HeaderViewPager alloc]init];
     [self.view addSubview:pager];
     _viewPager = pager;
+    [self.view setBackgroundColor:[UIColor blackColor]];
 }
 
 -(void) initDefaultData
@@ -44,6 +46,7 @@
     _viewPager.headTitles = tabTitles;
     [_viewPager setSectionPage:1];
     [self contentControllers];
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent];
     
 }
 
@@ -53,7 +56,9 @@
         _contentControllers = [NSMutableArray array];
         MyViewController *myController = [[MyViewController alloc]init];
         RecommandViewController *recommandController = [[RecommandViewController alloc]init];
+        recommandController.mainViewController = self;
         CompilationViewController *compController = [[CompilationViewController alloc]init];
+        compController.mainController =self;
         [_contentControllers addObject:myController];
         [_contentControllers addObject:recommandController];
         [_contentControllers addObject:compController];

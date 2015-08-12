@@ -19,7 +19,9 @@
 #import "Page.h"
 #import "MBProgressHUD.h"
 #import "MBProgressHUD+Add.h"
-@interface RecommandViewController ()<UITableViewDataSource,UITableViewDelegate,MJRefreshBaseViewDelegate>
+#import "ControllerUtils.h"
+#import "Game.h"
+@interface RecommandViewController ()<UITableViewDataSource,UITableViewDelegate,MJRefreshBaseViewDelegate,RecommandCell_1Delegate>
 {
     MJRefreshHeaderView *_headerView;
     MJRefreshFooterView *_footerView;
@@ -169,6 +171,11 @@
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone]; //（这种是没有点击后的阴影效果)
     SpecialGroupitem *item = _groups[indexPath.section][indexPath.row];
     [cell showBottomView:item.isShowbottom];
+    if (indexPath.section == 0) {
+        [cell setGameGroupDelegate:WX delegate:self];
+    }else{
+        [cell setGameGroupDelegate:NEST delegate:self];
+    }
     [cell setGameData:item];
     return cell;
 }
@@ -341,5 +348,24 @@
     [_footerView free];
 }
 
+-(void)clickBottom:(groupType)type
+{
+    switch (type) {
+        case WX:
+            [ControllerUtils openCompilationDetailControllerByContext:_mainViewController Type:RECOMMAND Title:@"精品推荐" DId:_dto.data.wxgameid];
+            break;
+        case NEST:
+            [ControllerUtils openCompilationDetailControllerByContext:_mainViewController Type:RECOMMAND Title:@"最近上架" DId:_dto.data.newgameid];
+            break;
+        default:
+            break;
+    }
+}
+
+-(void)clickgame:(Game *)game
+{
+    [ControllerUtils openPlayController:_mainViewController Game:game];
+//    XkyLog(@"%@",game.title);
+}
 
 @end

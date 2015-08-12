@@ -11,6 +11,7 @@
 #import "Game.h"
 #import "UIImageView+WebCache.h"
 #import "NSString+ImgPath.h"
+#import "TapGestureRecognizerParam.h"
 @interface RecommandCell_1()
 @property (weak, nonatomic) IBOutlet UIView *gameContainer1;
 @property (weak, nonatomic) IBOutlet UIView *gameContainer2;
@@ -25,7 +26,8 @@
 @property (weak, nonatomic) IBOutlet UIImageView *gameIcon4;
 @property (weak, nonatomic) IBOutlet UILabel *gameTitle4;
 @property (weak, nonatomic) IBOutlet UIView *bottomView;
-
+@property(nonatomic,weak) id<RecommandCell_1Delegate> delegate;
+@property(nonatomic,assign)groupType type;
 @end
 @implementation RecommandCell_1
 
@@ -77,6 +79,11 @@
     [_gameIcon2 sd_setImageWithURL:[NSURL URLWithString:[NSString getIconImgPath:g2.game_pic]] placeholderImage:[UIImage imageNamed:@"defulticon"]];
     [_gameIcon3 sd_setImageWithURL:[NSURL URLWithString:[NSString getIconImgPath:g3.game_pic]] placeholderImage:[UIImage imageNamed:@"defulticon"]];
     [_gameIcon4 sd_setImageWithURL:[NSURL URLWithString:[NSString getIconImgPath:g4.game_pic]] placeholderImage:[UIImage imageNamed:@"defulticon"]];
+    
+    [self setClickGameView:_gameContainer1 Game:g1];
+     [self setClickGameView:_gameContainer2 Game:g2];
+     [self setClickGameView:_gameContainer3 Game:g3];
+     [self setClickGameView:_gameContainer4 Game:g4];
 }
 
 -(void) showBottomView:(BOOL) isShow
@@ -84,6 +91,40 @@
     _bottomView.hidden = !isShow;
 }
 
+-(void)setGameGroupDelegate:(groupType)groupType delegate:(id<RecommandCell_1Delegate>)delegate
+{
+    _type = groupType;
+    _delegate = delegate;
+    [self setClickBottomView];
+}
+
+
+-(void) setClickGameView:(UIView*)container Game:(Game*) game
+{
+    TapGestureRecognizerParam *tagGetster = [[TapGestureRecognizerParam alloc]initWithTarget:self action:@selector(clickGameItem:)];
+    tagGetster.param = game;
+    [container addGestureRecognizer:tagGetster];
+}
+
+-(void) clickGameItem:(TapGestureRecognizerParam*) getster
+{
+    if ([_delegate respondsToSelector:@selector(clickgame:)]) {
+        [_delegate clickgame:getster.param];
+    }
+}
+
+-(void) setClickBottomView
+{
+    TapGestureRecognizerParam *tagGetster = [[TapGestureRecognizerParam alloc]initWithTarget:self action:@selector(clickBottom:)];
+    [_bottomView addGestureRecognizer:tagGetster];
+}
+
+-(void) clickBottom:(TapGestureRecognizerParam*) getster
+{
+    if ([_delegate respondsToSelector:@selector(clickBottom:)]) {
+        [_delegate clickBottom:_type];
+    }
+}
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];
