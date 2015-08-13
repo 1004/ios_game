@@ -89,6 +89,15 @@
 		36BC8AE71B75EC14001FA521 /* TestContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BC8AE51B75EC14001FA521 /* TestContentController.m */; };
 		36BC8AE81B75EC14001FA521 /* TestContentController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36BC8AE61B75EC14001FA521 /* TestContentController.xib */; };
 		36BC8AEB1B761209001FA521 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36BC8AEA1B761209001FA521 /* MainViewController.m */; };
+		36CC18531B7AEADB00108B61 /* TapGestureRecognizerParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CC18521B7AEADB00108B61 /* TapGestureRecognizerParam.m */; };
+		36CC18561B7AED8E00108B61 /* Compilation_D_Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CC18551B7AED8E00108B61 /* Compilation_D_Controller.m */; };
+		36CC18591B7AEF3100108B61 /* ControllerUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CC18581B7AEF3100108B61 /* ControllerUtils.m */; };
+		36CC185D1B7B2F7800108B61 /* CompilationDetailBiz.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CC185C1B7B2F7800108B61 /* CompilationDetailBiz.m */; };
+		36CC18601B7B30E700108B61 /* CompilationDetail_R.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CC185F1B7B30E700108B61 /* CompilationDetail_R.m */; };
+		36CC18641B7B318B00108B61 /* CompilationDetailPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CC18631B7B318B00108B61 /* CompilationDetailPresenter.m */; };
+		36CC18671B7B39EC00108B61 /* CompilationDetailDto.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CC18661B7B39EC00108B61 /* CompilationDetailDto.m */; };
+		36CC186E1B7B52EA00108B61 /* PlayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 36CC186C1B7B52EA00108B61 /* PlayViewController.m */; };
+		36CC186F1B7B52EA00108B61 /* PlayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 36CC186D1B7B52EA00108B61 /* PlayViewController.xib */; };
 		36E5C94D1B78803E00D52A88 /* NetTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E5C94C1B78803E00D52A88 /* NetTools.m */; };
 		36E5C9511B78850C00D52A88 /* BaseNetBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E5C9501B78850C00D52A88 /* BaseNetBase.m */; };
 		36E5C9551B7888B400D52A88 /* PageCommParams.m in Sources */ = {isa = PBXBuildFile; fileRef = 36E5C9541B7888B400D52A88 /* PageCommParams.m */; };
@@ -282,6 +291,23 @@
 		36BC8AE61B75EC14001FA521 /* TestContentController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestContentController.xib; sourceTree = "<group>"; };
 		36BC8AE91B761209001FA521 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		36BC8AEA1B761209001FA521 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		36CC18511B7AEADB00108B61 /* TapGestureRecognizerParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TapGestureRecognizerParam.h; sourceTree = "<group>"; };
+		36CC18521B7AEADB00108B61 /* TapGestureRecognizerParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TapGestureRecognizerParam.m; sourceTree = "<group>"; };
+		36CC18541B7AED8E00108B61 /* Compilation_D_Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Compilation_D_Controller.h; sourceTree = "<group>"; };
+		36CC18551B7AED8E00108B61 /* Compilation_D_Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Compilation_D_Controller.m; sourceTree = "<group>"; };
+		36CC18571B7AEF3100108B61 /* ControllerUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ControllerUtils.h; sourceTree = "<group>"; };
+		36CC18581B7AEF3100108B61 /* ControllerUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ControllerUtils.m; sourceTree = "<group>"; };
+		36CC185B1B7B2F7800108B61 /* CompilationDetailBiz.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompilationDetailBiz.h; sourceTree = "<group>"; };
+		36CC185C1B7B2F7800108B61 /* CompilationDetailBiz.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompilationDetailBiz.m; sourceTree = "<group>"; };
+		36CC185E1B7B30E700108B61 /* CompilationDetail_R.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompilationDetail_R.h; sourceTree = "<group>"; };
+		36CC185F1B7B30E700108B61 /* CompilationDetail_R.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompilationDetail_R.m; sourceTree = "<group>"; };
+		36CC18621B7B318B00108B61 /* CompilationDetailPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompilationDetailPresenter.h; sourceTree = "<group>"; };
+		36CC18631B7B318B00108B61 /* CompilationDetailPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompilationDetailPresenter.m; sourceTree = "<group>"; };
+		36CC18651B7B39EC00108B61 /* CompilationDetailDto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CompilationDetailDto.h; sourceTree = "<group>"; };
+		36CC18661B7B39EC00108B61 /* CompilationDetailDto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CompilationDetailDto.m; sourceTree = "<group>"; };
+		36CC186B1B7B52EA00108B61 /* PlayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PlayViewController.h; path = ../../../../../../../../../../../Documents/PlayViewController.h; sourceTree = "<group>"; };
+		36CC186C1B7B52EA00108B61 /* PlayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PlayViewController.m; path = ../../../../../../../../../../../Documents/PlayViewController.m; sourceTree = "<group>"; };
+		36CC186D1B7B52EA00108B61 /* PlayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = PlayViewController.xib; path = ../../../../../../../../../../../Documents/PlayViewController.xib; sourceTree = "<group>"; };
 		36E5C94B1B78803E00D52A88 /* NetTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetTools.h; sourceTree = "<group>"; };
 		36E5C94C1B78803E00D52A88 /* NetTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetTools.m; sourceTree = "<group>"; };
 		36E5C94F1B78850C00D52A88 /* BaseNetBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetBase.h; sourceTree = "<group>"; };
@@ -413,6 +439,7 @@
 		36184ECF1B734CFB00331101 /* business */ = {
 			isa = PBXGroup;
 			children = (
+				36CC185A1B7B2F5F00108B61 /* B_CompilationDetail */,
 				369448921B79F75A006D205E /* B_Compilation */,
 				36E5C9621B789AD600D52A88 /* B_recommand */,
 			);
@@ -447,6 +474,8 @@
 				369448901B79F64E006D205E /* CompilationDto.m */,
 				3694489A1B79FD9F006D205E /* CompilationItemData.h */,
 				3694489B1B79FD9F006D205E /* CompilationItemData.m */,
+				36CC18511B7AEADB00108B61 /* TapGestureRecognizerParam.h */,
+				36CC18521B7AEADB00108B61 /* TapGestureRecognizerParam.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -474,6 +503,8 @@
 		36184ED51B734CFB00331101 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				36CC18541B7AED8E00108B61 /* Compilation_D_Controller.h */,
+				36CC18551B7AED8E00108B61 /* Compilation_D_Controller.m */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -481,6 +512,8 @@
 		36184ED61B734CFB00331101 /* model */ = {
 			isa = PBXGroup;
 			children = (
+				36CC18651B7B39EC00108B61 /* CompilationDetailDto.h */,
+				36CC18661B7B39EC00108B61 /* CompilationDetailDto.m */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -642,6 +675,9 @@
 		36184EE91B734CFB00331101 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				36CC186B1B7B52EA00108B61 /* PlayViewController.h */,
+				36CC186C1B7B52EA00108B61 /* PlayViewController.m */,
+				36CC186D1B7B52EA00108B61 /* PlayViewController.xib */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -663,6 +699,7 @@
 		36184EEC1B734CFB00331101 /* presenter */ = {
 			isa = PBXGroup;
 			children = (
+				36CC18611B7B317600108B61 /* P_CompilationDetail */,
 				369448931B79F77C006D205E /* P_Compilation */,
 				36E5C9721B78B3AE00D52A88 /* B_recommand */,
 			);
@@ -896,6 +933,8 @@
 				3644B2521B76160F00ECADEF /* controller */,
 				36E5C9561B78965E00D52A88 /* DeviceTools.h */,
 				36E5C9571B78965E00D52A88 /* DeviceTools.m */,
+				36CC18571B7AEF3100108B61 /* ControllerUtils.h */,
+				36CC18581B7AEF3100108B61 /* ControllerUtils.m */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -958,6 +997,26 @@
 				36BC8AE61B75EC14001FA521 /* TestContentController.xib */,
 			);
 			path = test;
+			sourceTree = "<group>";
+		};
+		36CC185A1B7B2F5F00108B61 /* B_CompilationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				36CC185B1B7B2F7800108B61 /* CompilationDetailBiz.h */,
+				36CC185C1B7B2F7800108B61 /* CompilationDetailBiz.m */,
+				36CC185E1B7B30E700108B61 /* CompilationDetail_R.h */,
+				36CC185F1B7B30E700108B61 /* CompilationDetail_R.m */,
+			);
+			path = B_CompilationDetail;
+			sourceTree = "<group>";
+		};
+		36CC18611B7B317600108B61 /* P_CompilationDetail */ = {
+			isa = PBXGroup;
+			children = (
+				36CC18621B7B318B00108B61 /* CompilationDetailPresenter.h */,
+				36CC18631B7B318B00108B61 /* CompilationDetailPresenter.m */,
+			);
+			path = P_CompilationDetail;
 			sourceTree = "<group>";
 		};
 		36E5C94E1B78817A00D52A88 /* netbase */ = {
@@ -1094,6 +1153,7 @@
 				365284F51B76F9D9000D0487 /* RecommandCell_1.xib in Resources */,
 				360A494B1B7341E5008B5986 /* Images.xcassets in Resources */,
 				36184F191B734F1B00331101 /* MBProgressHUD.bundle in Resources */,
+				36CC186F1B7B52EA00108B61 /* PlayViewController.xib in Resources */,
 				365284F31B76F9D9000D0487 /* R_Header.xib in Resources */,
 				3694488B1B79ED5E006D205E /* CompilationViewCell.xib in Resources */,
 				3694487A1B79DAE5006D205E /* MJRefresh.bundle in Resources */,
@@ -1150,6 +1210,7 @@
 				36E5C9551B7888B400D52A88 /* PageCommParams.m in Sources */,
 				36184F731B734F3100331101 /* UIButton+WebCache.m in Sources */,
 				36E5C95E1B78992D00D52A88 /* Status.m in Sources */,
+				36CC18561B7AED8E00108B61 /* Compilation_D_Controller.m in Sources */,
 				36184F741B734F3100331101 /* UIImage+GIF.m in Sources */,
 				369448811B79EAB6006D205E /* BaseTableViewController.m in Sources */,
 				369448961B79F7A0006D205E /* CompilationBiz.m in Sources */,
@@ -1165,6 +1226,7 @@
 				36184F6C1B734F3100331101 /* SDImageCache.m in Sources */,
 				36184F331B734F2300331101 /* MJType.m in Sources */,
 				36E5C9511B78850C00D52A88 /* BaseNetBase.m in Sources */,
+				36CC186E1B7B52EA00108B61 /* PlayViewController.m in Sources */,
 				36184F881B73548C00331101 /* MHeader.m in Sources */,
 				36184F711B734F3100331101 /* SDWebImageManager.m in Sources */,
 				36E5C95B1B78985500D52A88 /* ResponseCommonData.m in Sources */,
@@ -1178,19 +1240,25 @@
 				36E5C9751B78B48700D52A88 /* RecommandPresenter.m in Sources */,
 				36E5C96E1B78A5C100D52A88 /* BaseBiz.m in Sources */,
 				36184F301B734F2300331101 /* MJIvar.m in Sources */,
+				36CC18531B7AEADB00108B61 /* TapGestureRecognizerParam.m in Sources */,
 				360A49401B7341E5008B5986 /* main.m in Sources */,
+				36CC18641B7B318B00108B61 /* CompilationDetailPresenter.m in Sources */,
 				3644B2501B7615D700ECADEF /* RecommandViewController.m in Sources */,
 				36184F781B734F3100331101 /* UIImageView+WebCache.m in Sources */,
+				36CC18671B7B39EC00108B61 /* CompilationDetailDto.m in Sources */,
 				36184F6F1B734F3100331101 /* SDWebImageDownloader.m in Sources */,
 				36184F091B734F1300331101 /* AFHTTPClient.m in Sources */,
+				36CC18601B7B30E700108B61 /* CompilationDetail_R.m in Sources */,
 				3694487B1B79DAE5006D205E /* MJRefreshBaseView.m in Sources */,
 				3694482E1B79B33E006D205E /* NSString+ImgPath.m in Sources */,
 				36184F6A1B734F3100331101 /* MKAnnotationView+WebCache.m in Sources */,
 				3644B2551B76161C00ECADEF /* BaseViewController.m in Sources */,
 				36184F1A1B734F1B00331101 /* MBProgressHUD.m in Sources */,
 				36184F6E1B734F3100331101 /* SDWebImageDecoder.m in Sources */,
+				36CC18591B7AEF3100108B61 /* ControllerUtils.m in Sources */,
 				36184F6D1B734F3100331101 /* SDWebImageCompat.m in Sources */,
 				362F37721B74C1F800F07DFD /* MContentLayout.m in Sources */,
+				36CC185D1B7B2F7800108B61 /* CompilationDetailBiz.m in Sources */,
 				36E5C9581B78965E00D52A88 /* DeviceTools.m in Sources */,
 				36E5C9611B78997300D52A88 /* Page.m in Sources */,
 				365284FB1B7705C8000D0487 /* GroupTableView.m in Sources */,

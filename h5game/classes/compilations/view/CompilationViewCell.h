@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 @class CompilationItemData;
+@class CompilationData;
+
+@protocol CompilationViewCellClickDelegate <NSObject>
+-(void) clickItem:(CompilationData*) item;
+@end
+
 @interface CompilationViewCell : UITableViewCell
 +(instancetype) loadCell1ByXib:(UITableView *)tableView;
 -(void) initCompilationData:(CompilationItemData *)data;
-
+@property(nonatomic,weak) id<CompilationViewCellClickDelegate> delegate;
 @end
+

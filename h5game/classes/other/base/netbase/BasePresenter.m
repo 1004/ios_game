@@ -25,6 +25,15 @@
     _baseBiz = [self presenterOperateBiz];
 }
 /**
+ *  更换引擎
+ *
+ *  @param biz <#biz description#>
+ */
+-(void) changeBiz:(BaseBiz*) biz
+{
+    _baseBiz = biz;
+}
+/**
  *  子类可以封装该方法  然后进行模型的回调
  *
  *  @param params  <#params description#>

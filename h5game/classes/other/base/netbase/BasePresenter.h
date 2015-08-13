@@ -36,7 +36,12 @@
 
 -(void)presenterLoadNextData:(NSArray*) params:(HTTPSUCCESS) success error:(HTTPFAILDE) failed;
 
-
+/**
+ *  更换引擎
+ *
+ *  @param biz <#biz description#>
+ */
+-(void) changeBiz:(BaseBiz*) biz;
 @end
 
 @protocol BasePresenterDataSource <NSObject>

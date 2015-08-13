@@ -2,7 +2,7 @@
 
 //常亮
 //头部高度
-#define XHEADER_H 80
+#define XHEADER_H 60
 //头部字体大小
 #define XHEADER_FONT [UIFont systemFontOfSize:14]
 //普通字体颜色

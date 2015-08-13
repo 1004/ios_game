@@ -10,5 +10,5 @@
 #import "BaseViewController.h"
 @protocol HeaderViewPagerDelegate;
 @interface RecommandViewController : BaseViewController<HeaderViewPagerDelegate>
-
+@property(nonatomic,weak)UIViewController *mainViewController;
 @end

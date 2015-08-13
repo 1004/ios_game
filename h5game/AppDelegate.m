@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MainViewController.h"
+#import "BaseNaviViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -18,7 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     MainViewController *rootController = [[MainViewController alloc]init];
-    self.window.rootViewController = rootController;
+    BaseNaviViewController * navController =  [[BaseNaviViewController alloc]initWithRootViewController:rootController];
+    [navController setNavigationBarHidden:YES];
+    [navController setToolbarHidden:YES];
+    self.window.rootViewController = navController;
     [self.window makeKeyAndVisible];
     return YES;
 }

@@ -15,7 +15,9 @@
 #import "MJRefresh.h"
 #import "Page.h"
 #import "MBProgressHUD+Add.h"
-@interface CompilationViewController ()<MJRefreshBaseViewDelegate>
+#import "ControllerUtils.h"
+#import "CompilationData.h"
+@interface CompilationViewController ()<MJRefreshBaseViewDelegate,CompilationViewCellClickDelegate>
 {
  
     MJRefreshHeaderView *_headerView;
@@ -82,7 +84,13 @@
     CompilationViewCell *cell = [CompilationViewCell loadCell1ByXib:tableView];
     [cell setSelectionStyle:UITableViewCellSelectionStyleNone]; //（这种是没有点击后的阴影效果)
     [cell initCompilationData:_datas[indexPath.row]];
+    cell.delegate =self;
     return cell;
+}
+
+-(void)clickItem:(CompilationData *)item
+{
+    [ControllerUtils openCompilationDetailControllerByContext:_mainController Type:ONLINE Title:item.category_name DId:item.category_id];
 }
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -184,7 +192,6 @@
 {
     XkyLog(@"---index--%d",index);
 }
-
 
 
 @end
